@@ -62,11 +62,11 @@ export default class TripResultItemComp extends React.Component {
 
       if(this.props.tripDelegate.object().is_bus5){
         return (
-          <Redirect to={`/accept-trip-bus5/${params['reply_to_offer_id']}`} />
+          <Redirect to={`/bus5/accept-trip-bus5/${params['reply_to_offer_id']}`} />
         )
       }
       else {
-        return (<Redirect to={`/accept-trip/${params['request_trip_id']}/${params['trip_id']}`} />)
+        return (<Redirect to={`/bus5/accept-trip/${params['request_trip_id']}/${params['trip_id']}`} />)
       }
     }
 

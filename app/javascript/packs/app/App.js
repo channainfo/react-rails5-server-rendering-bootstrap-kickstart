@@ -25,16 +25,16 @@ const App = () => (
   <Router>
     <div>
       <Switch>
-        <SessionRoute path="/login" component={LoginComp} layout='LoginLayout' />
-        <LayoutRoute path="/logout" component={LoggedOutComp} layout='AppLayout' />
+        <SessionRoute path="/bus5/login" component={LoginComp} layout='LoginLayout' />
+        <LayoutRoute path="/bus5/logout" component={LoggedOutComp} layout='AppLayout' />
 
-        <PrivateRoute exact path="/" component={HomeComp} layout='AppLayout'/>
-        <PrivateRoute path="/request-summary" component={RequestSummaryComp} layout='AppLayout' />
-        <PrivateRoute path="/search/:originId?/:destinationId?/:numberOfPaxs?/:onDate?/:onDate?" component={SearchTripComp} layout='AppLayout'/>
-        <PrivateRoute path="/profile" component={ProfileComp} layout='AppLayout'/>
-        <PrivateRoute path="/request-detail/:onDate/:routeId" component={RequestTripDetailComp} layout='AppLayout'/>
-        <PrivateRoute path="/accept-trip-bus5/:offerResponseId" component={AcceptTripBus5Comp} layout='AppLayout' />
-        <PrivateRoute path="/accept-trip/:requestTripId/:tripId" component={AcceptTripComp} layout='AppLayout' />
+        <PrivateRoute exact path="/bus5" component={HomeComp} layout='AppLayout'/>
+        <PrivateRoute path="/bus5/request-summary" component={RequestSummaryComp} layout='AppLayout' />
+        <PrivateRoute path="/bus5/search/:originId?/:destinationId?/:numberOfPaxs?/:onDate?/:onDate?" component={SearchTripComp} layout='AppLayout'/>
+        <PrivateRoute path="/bus5/profile" component={ProfileComp} layout='AppLayout'/>
+        <PrivateRoute path="/bus5/request-detail/:onDate/:routeId" component={RequestTripDetailComp} layout='AppLayout'/>
+        <PrivateRoute path="/bus5/accept-trip-bus5/:offerResponseId" component={AcceptTripBus5Comp} layout='AppLayout' />
+        <PrivateRoute path="/bus5/accept-trip/:requestTripId/:tripId" component={AcceptTripComp} layout='AppLayout' />
         <LayoutRoute  component={NotFoundComp} />
       </Switch>
 

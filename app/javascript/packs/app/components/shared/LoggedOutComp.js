@@ -7,7 +7,7 @@ export default class LoggedOutComp extends React.Component {
   render() {
     UserAccessToken.getInstance().signOutUser()
     return(
-      <Redirect to='/login' />
+      <Redirect to='/bus5/login' />
     )
   }
 }
