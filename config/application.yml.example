@@ -1,0 +1,29 @@
+default: &default
+  APP_NAME: "BookMeBus"
+  COMPANY_NAME: "Camtasia Technology"
+  APP_VERSION: "Development"
+  ENABLE_HTTPS: 'no'
+
+  CLIENT_ID: ''
+  CLIENT_SECRET: ''
+  VERSION: '1.0.0'
+  HOST: 'http://localhost:3000'
+
+  FIREBASE_API_KEY: ''
+  FIREBASE_AUTH_DOMAIN: ''
+  FIREBASE_DATABASE_URL: ''
+  FIREBASE_PROJECT_ID: ''
+  FIREBASE_STORAGE_BUCKET: ''
+  FIREBASE_MESSAGE_SENDER_ID: ''
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default
+
+staging:
+  <<: *default

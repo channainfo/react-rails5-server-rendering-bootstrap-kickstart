@@ -1,0 +1,27 @@
+ul.main-nav {
+  list-style-type: none;
+  clear: both;
+}
+
+ul.main-nav li {
+  float: left;
+  padding: 5px 10px;
+}
+
+.request-summary-enter {
+  opacity: 0.01;
+}
+
+.request-summary-enter.request-summary-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.request-summary-leave {
+  opacity: 1;
+}
+
+.request-summary-leave.request-summary-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
