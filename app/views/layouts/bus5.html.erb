@@ -4,9 +4,14 @@
     <title>Avocado5</title>
     <%= csrf_meta_tags %>
 
+    <!-- Assets pipeline -->
     <%= stylesheet_link_tag    'bus5', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'bus5', 'data-turbolinks-track': 'reload' %>
-    
+
+    <!-- Required to mounted react-rails -->
+    <%= javascript_pack_tag 'react_rails' %>
+
+    <!-- Webpacker -->
     <%= stylesheet_pack_tag 'app/styles/passenger' %>
     <%= stylesheet_pack_tag 'app/Bus5App' %>
   </head>

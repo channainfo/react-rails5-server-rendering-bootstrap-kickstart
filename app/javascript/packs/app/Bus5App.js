@@ -28,7 +28,6 @@ import nav       from './styles/passenger.scss'
 // import FooImage from 'assets/images/foo-image.png'
 // import 'assets/stylesheets/bar'
 
-
 const Bus5App = () => (
   <Router>
     <div>

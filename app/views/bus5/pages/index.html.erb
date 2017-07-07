@@ -1,1 +1,11 @@
-<%= javascript_pack_tag 'bus5' %>
+<div>
+  <%= react_component("app/Bus5App") %>
+
+  <div>Client side rendering </div>
+  <%= react_component("app/components/shared/TestServerRenderingComp", { greeting: "French passengers", from: 'CEO Langda.' },
+                                                        { prerender: false }) %>
+  <div>Server side rendering </div>
+  <%= react_component("app/components/shared/PostComp", { title: "React app on rails", published: 1 },
+                                         { prerender: true }) %>
+
+</div>
