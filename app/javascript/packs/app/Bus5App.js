@@ -21,7 +21,15 @@ import ProfileComp             from './components/shared/ProfileComp'
 
 import NotFoundComp            from './components/error/NotFoundComp'
 
-const App = () => (
+import bootstrap from './Bus5App.scss'
+import nav       from './styles/passenger.scss'
+
+// import asset from rails with yarn add babel-plugin-module-resolver plugin
+// import FooImage from 'assets/images/foo-image.png'
+// import 'assets/stylesheets/bar'
+
+
+const Bus5App = () => (
   <Router>
     <div>
       <Switch>
@@ -42,7 +50,7 @@ const App = () => (
   </Router>
 )
 
-export default App
+export default Bus5App
 
 // {
 //   "request_trip_id": 407,

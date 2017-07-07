@@ -1,6 +1,5 @@
 import React    from 'react'
 import { Link } from 'react-router-dom'
-
 export default class PassengerAppLayout extends React.Component {
 
   render(){
@@ -13,7 +12,7 @@ export default class PassengerAppLayout extends React.Component {
           <li><Link to='/bus5/logout'>Logout</Link></li>
 
         </ul>
-        
+
         <div>
          {this.props.children}
         </div>

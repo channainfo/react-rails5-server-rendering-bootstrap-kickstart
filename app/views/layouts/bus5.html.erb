@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Avocado5</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'bus5', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'bus5', 'data-turbolinks-track': 'reload' %>
+    
+    <%= stylesheet_pack_tag 'app/styles/passenger' %>
+    <%= stylesheet_pack_tag 'app/Bus5App' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

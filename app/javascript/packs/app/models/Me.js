@@ -10,7 +10,7 @@ export default class Me {
   }
 
   static defaultHome(){
-    return this.isOperatorUser() ? '/request-summary' : '/search'
+    return this.isOperatorUser() ? '/bus5/request-summary' : '/bus5/search'
   }
 
   static isOperatorUser(){
